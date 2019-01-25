@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import colour from '../resources/styles/colours';
 import Page from '../components/Page';
 import SlideInRight from './SlideInRight';
-import SlideOutRight from './SlideOutRight';
+import SlideOutBottom from './SlideOutBottom';
 
 const PlaygroundPageAnimation = styled(Page)`
 background: ${colour.darkPink};
@@ -10,7 +10,7 @@ background: ${colour.darkPink};
   animation: ${SlideInRight} 0.2s forwards;
 }
 &.page-exit {
-  animation: ${SlideOutRight} 0.2s forwards;
+  animation: ${SlideOutBottom} 0.2s forwards;
 }
 `;
 

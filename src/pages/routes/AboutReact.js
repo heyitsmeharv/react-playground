@@ -1,10 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import colour from '../../resources/styles/colours';
-import SideBar from '../../components/SideBar';
-import { SideBarWrapper } from '../../components/Wrapper';
 import Page from '../../components/Page';
-import PlaygroundPageAnimationTwo from '../../animations/PlaygroundPageAnimationTwo';
+import PlaygroundPageAnimation from '../../animations/PlaygroundPageAnimation';
 import SnippetBox from '../../components/SnippetBox';
 
 const Paragraph = styled.div`
@@ -15,18 +13,14 @@ const Paragraph = styled.div`
 
 const AboutReact = () => {
   return (
-    <PlaygroundPageAnimationTwo>
-      <SideBarWrapper>
-        <SideBar/>
-        {/* </SideBarWrapper> */}
-          <Page>
-            <h2>React</h2>
-            <SnippetBox>
-              <Paragraph>Hello</Paragraph>
-            </SnippetBox>
-          </Page>
-      </SideBarWrapper>
-    </PlaygroundPageAnimationTwo>
+    <PlaygroundPageAnimation>
+      <Page>
+        <h2>React</h2>
+        <SnippetBox>
+          <Paragraph>Hello</Paragraph>
+        </SnippetBox>
+      </Page>
+    </PlaygroundPageAnimation>
   );
 }
 

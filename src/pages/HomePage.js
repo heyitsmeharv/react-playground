@@ -17,7 +17,7 @@ const HomePage = () => {
       <Page>
         <h2>Home Page</h2>
         <Paragraph>This is a personal project to demonstrate my understanding of React and the stack of technologies that can be used along side.</Paragraph>
-        <NavButton home="true" to="/playground">Playground <FiArrowRight /></NavButton>
+        <NavButton home="true" to="/playground/react">Playground <FiArrowRight /></NavButton>
       </Page>
     </HomePageAnimation>
   );

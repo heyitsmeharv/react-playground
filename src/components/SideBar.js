@@ -2,12 +2,12 @@ import React from 'react';
 import styled from 'styled-components';
 import colour from '../resources/styles/colours'
 import { NavButton } from './Button';
+import PlaygroundPageAnimation from '../animations/PlaygroundPageAnimation';
 
 const SideBarStyle = styled.div`
   background: ${colour.pink};
-  max-width: 15%;
-  height: 100%;
-  /* z-index: 1; */
+  height: 100vh;
+  text-align: center;
 `
 
 const SideBarList = styled.ul`
@@ -26,6 +26,7 @@ const SideBarListItem = styled.li`
 
 const SideBar = () => {
   return (
+    <PlaygroundPageAnimation>
     <SideBarStyle>
       <SideBarList>
         <SideBarListItem><NavButton menu="true" to="/playground/react">React</NavButton></SideBarListItem>
@@ -38,7 +39,8 @@ const SideBar = () => {
         <SideBarListItem><NavButton menu="true" to="/playground/grid-layout">Grid Layout</NavButton></SideBarListItem>
         <SideBarListItem><NavButton menu="true" to="/playground/icons">Icons</NavButton></SideBarListItem>
       </SideBarList>
-    </SideBarStyle>
+      </SideBarStyle>
+    </PlaygroundPageAnimation>
   );
 }
 

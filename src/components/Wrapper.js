@@ -4,9 +4,10 @@ import colour from '../resources/styles/colours'
 const Wrapper = styled.div`
   position: relative;
   background: ${colour.white};
-  width: 100%;
+  /* width: 100%; */
   min-height: 100vh;
   height: 100vh;
+  height: 100%;
   overflow-x: hidden;
   overflow-y: hidden;
   margin: 0 auto;
@@ -14,11 +15,9 @@ const Wrapper = styled.div`
   font-family: "Acme", sans-serif;
 `
 
-export const SideBarWrapper = styled.div`
+export const RouteWrapper = styled.div`
   display: flex;
   flex-direction: row;
-  height: 100%;
 `
-
 
 export default Wrapper;

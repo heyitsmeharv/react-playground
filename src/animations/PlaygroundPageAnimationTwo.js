@@ -1,8 +1,9 @@
 import styled from 'styled-components';
 import colour from '../resources/styles/colours';
 import Page from '../components/Page';
+import SlideInTop from './SlideInTop';
+import SlideOutBottom from './SlideOutBottom';
 import SlideInBottom from './SlideInBottom';
-import SlideOutTop from './SlideOutTop';
 
 const PlaygroundPageAnimationTwo = styled(Page)`
 background: ${colour.darkPink};
@@ -10,7 +11,7 @@ background: ${colour.darkPink};
   animation: ${SlideInBottom} 0.2s forwards;
 }
 &.page-exit {
-  animation: ${SlideOutTop} 0.2s forwards;
+  animation: ${SlideOutBottom} 0.2s forwards;
 }
 `;
 
