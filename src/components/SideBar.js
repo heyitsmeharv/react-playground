@@ -38,6 +38,8 @@ const SideBar = () => {
         <SideBarListItem><NavButton menu="true" to="/playground/animations">Animations</NavButton></SideBarListItem>
         <SideBarListItem><NavButton menu="true" to="/playground/grid-layout">Grid Layout</NavButton></SideBarListItem>
         <SideBarListItem><NavButton menu="true" to="/playground/icons">Icons</NavButton></SideBarListItem>
+        <SideBarListItem><NavButton menu="true" to="/playground/react-loaders">Loaders</NavButton></SideBarListItem>
+        <SideBarListItem><NavButton menu="true" to="/playground/react-notifications">Notifications</NavButton></SideBarListItem>
       </SideBarList>
       </SideBarStyle>
     </PlaygroundPageAnimation>

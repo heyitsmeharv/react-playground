@@ -42,8 +42,11 @@ export const NavButton = styled(NavLink)`
       border: 2px solid ${colour.darkPink};
     }
   `}
-
-
 `
+
+export const NotificationButton = styled.button`
+  width: 100px;
+  height: 50px;
+`;
 
 export default NavButton;

@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 import colour from '../resources/styles/colours'
 
 const Page = styled.div`
@@ -6,11 +6,17 @@ const Page = styled.div`
   height: 100vh;
   left: 0;
   text-align: center;
-  h2 {
-    /* color: ${colour.white}; */
-    font-size: 2rem;
-    margin-top: 2%;
-  }
 `;
+
+export const PageHeader = styled.div`
+  font-size: 2rem;
+  margin-top: 2%;
+  margin-right: 10%;
+
+  ${props => props.home && css`
+    margin-right: 0%;
+  `}
+`;
+
 
 export default Page;

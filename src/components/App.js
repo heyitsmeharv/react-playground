@@ -5,11 +5,13 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
 
 import Header from './Header';
-import Wrapper, { RouteWrapper } from './Wrapper';
+import Wrapper, { FlexWrapper } from './Wrapper';
 import SideBar from './SideBar';
 import HomePage from '../pages/HomePage';
 import AboutReact from '../pages/routes/AboutReact';
 import AboutRouting from '../pages/routes/AboutRouting';
+import AboutSpinners from '../pages/routes/AboutSpinners';
+import AboutNotifications from '../pages/routes/AboutNotifications';
 
 
 class App extends Component {
@@ -18,7 +20,7 @@ class App extends Component {
       <Router>
         <Wrapper>
           <Header />
-          <RouteWrapper>
+          <FlexWrapper>
           <Route path="/playground" component={SideBar}/>
           <Route
             render={({ location }) => {
@@ -40,13 +42,15 @@ class App extends Component {
                       <Route exact path="/playground/animation" component={AboutReact} />
                       <Route exact path="/playground/grid-layout" component={AboutReact} />
                       <Route exact path="/playground/icons" component={AboutReact} />
+                      <Route exact path="/playground/react-loaders" component={AboutSpinners} />
+                      <Route exact path="/playground/react-notifications" component={AboutNotifications} />
                     </Switch>
                   </CSSTransition>
                 </TransitionGroup>
               );
             }}
           />
-          </RouteWrapper>
+          </FlexWrapper>
         </Wrapper>
       </Router>
     );

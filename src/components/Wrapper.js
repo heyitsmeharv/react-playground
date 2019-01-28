@@ -15,7 +15,7 @@ const Wrapper = styled.div`
   font-family: "Acme", sans-serif;
 `
 
-export const RouteWrapper = styled.div`
+export const FlexWrapper = styled.div`
   display: flex;
   flex-direction: row;
 `
