@@ -45,8 +45,21 @@ export const NavButton = styled(NavLink)`
 `
 
 export const NotificationButton = styled.button`
-  width: 100px;
-  height: 50px;
+  background: ${colour.darkPink};
+  color: white;
+  border-radius: 3px;
+  border: 2px solid ${colour.secondary};
+  margin: 0.5em 1em;
+  padding: 0.25em 1em;
+  text-decoration: none!important;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+
+  :hover {
+    background: ${colour.white};
+    color: ${colour.darkPink}
+  }
 `;
 
 export default NavButton;

@@ -34,14 +34,14 @@ class App extends Component {
                     <Switch location={location}>
                       <Route exact path="/" component={HomePage} />
                       <Route exact path="/playground/react" component={AboutReact} />
-                      <Route exact path="/playground/react-router" component={AboutRouting} />
+                      {/* <Route exact path="/playground/react-router" component={AboutRouting} />
                       <Route exact path="/playground/styled-components" component={AboutReact} />
                       <Route exact path="/playground/testing" component={AboutReact} />
                       <Route exact path="/playground/api-requests" component={AboutReact} />
                       <Route exact path="/playground/webpack" component={AboutReact} />
                       <Route exact path="/playground/animation" component={AboutReact} />
                       <Route exact path="/playground/grid-layout" component={AboutReact} />
-                      <Route exact path="/playground/icons" component={AboutReact} />
+                      <Route exact path="/playground/icons" component={AboutReact} /> */}
                       <Route exact path="/playground/react-loaders" component={AboutSpinners} />
                       <Route exact path="/playground/react-notifications" component={AboutNotifications} />
                     </Switch>

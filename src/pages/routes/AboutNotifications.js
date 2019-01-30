@@ -10,7 +10,16 @@ import "react-notifications-component/dist/theme.css";
 const PageContainer = styled.div`
   display: flex;
   align-self: center;
+  overflow-y: auto;
+  max-width: 90%;
+  max-height: 90%;
+`
 
+const ButtonGroup = styled.div`
+  display: flex;
+  align-self: center;
+  align-items: center;
+  margin-right: 10%;
 `
 
 class AboutNotifications extends Component {
@@ -22,8 +31,8 @@ class AboutNotifications extends Component {
 
   addNotification() {
     this.notificationDOMRef.current.addNotification({
-      title: "Awesomeness",
-      message: "Awesome Notifications!",
+      title: "React Notification",
+      message: "Notification!",
       type: "success",
       insert: "top",
       container: "top-right",
@@ -41,9 +50,20 @@ class AboutNotifications extends Component {
           <PageHeader>Notifications</PageHeader>
           <PageContainer>
             <ReactNotification ref={this.notificationDOMRef} />
-            <NotificationButton onClick={this.addNotification}>
-              Add Awesome Notification
-            </NotificationButton>
+            <ButtonGroup>
+              <NotificationButton onClick={() => this.addNotification}>
+                Top Right
+              </NotificationButton>
+              <NotificationButton onClick={this.addNotification}>
+                Top Right
+              </NotificationButton>
+              <NotificationButton onClick={this.addNotification}>
+                Top Right
+              </NotificationButton>
+              <NotificationButton onClick={this.addNotification}>
+                Top Right
+              </NotificationButton>
+            </ButtonGroup>
         </PageContainer>
         </Page>
       </PlaygroundPageAnimation>

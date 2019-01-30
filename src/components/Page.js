@@ -11,6 +11,7 @@ const Page = styled.div`
 export const PageHeader = styled.div`
   font-size: 2rem;
   margin-top: 2%;
+  margin-bottom: 1%;
   margin-right: 10%;
 
   ${props => props.home && css`

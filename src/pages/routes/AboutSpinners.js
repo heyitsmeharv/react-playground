@@ -61,8 +61,6 @@ const Row = styled.div`
 const PageContainer = styled.div`
   display: flex;
   flex-direction: column;
-  align-self: center;
-  max-width: 90%;
 `
 
 const AboutSpinners = () => {
