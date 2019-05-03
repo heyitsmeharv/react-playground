@@ -18,7 +18,7 @@ const HomePage = () => {
         <PageHeader home="true">Home Page</PageHeader>
         {/* <Paragraph>This is a personal project to demonstrate my understanding of React and the stack of technologies that can be used along side.</Paragraph> */}
           <Paragraph>My Playground for testing out new and cool React tech and also helpful references.</Paragraph>
-        <NavButton home="true" to="/playground/react">Playground <FiArrowRight /></NavButton>
+        <NavButton home="true" to="/playground">Playground <FiArrowRight /></NavButton>
       </Page>
     </HomePageAnimation>
   );

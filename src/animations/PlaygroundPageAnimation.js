@@ -10,7 +10,7 @@ background: ${colour.darkPink};
   animation: ${SlideInRight} 0.2s forwards;
 }
 &.page-exit {
-  animation: ${SlideOutBottom} 0.2s forwards;
+  animation: ${SlideOutBottom} 0.1s forwards;
 }
 `;
 

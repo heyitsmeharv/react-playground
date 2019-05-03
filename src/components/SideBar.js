@@ -29,17 +29,17 @@ const SideBar = () => {
     <PlaygroundPageAnimation>
     <SideBarStyle>
       <SideBarList>
-        <SideBarListItem><NavButton menu="true" to="/playground/react">React</NavButton></SideBarListItem>
-        <SideBarListItem><NavButton menu="true" to="/playground/react-router">Routing</NavButton></SideBarListItem>
-        <SideBarListItem><NavButton menu="true" to="/playground/styled-components">Styled Components</NavButton></SideBarListItem>
-        <SideBarListItem><NavButton menu="true" to="/playground/testing">Testing</NavButton></SideBarListItem>
-        <SideBarListItem><NavButton menu="true" to="/playground/api-requests">API Requests</NavButton></SideBarListItem>
-        <SideBarListItem><NavButton menu="true" to="/playground/webpack">Webpack</NavButton></SideBarListItem>
-        <SideBarListItem><NavButton menu="true" to="/playground/animations">Animations</NavButton></SideBarListItem>
-        <SideBarListItem><NavButton menu="true" to="/playground/grid-layout">Grid Layout</NavButton></SideBarListItem>
-        <SideBarListItem><NavButton menu="true" to="/playground/icons">Icons</NavButton></SideBarListItem>
-        <SideBarListItem><NavButton menu="true" to="/playground/react-loaders">Loaders</NavButton></SideBarListItem>
-        <SideBarListItem><NavButton menu="true" to="/playground/react-notifications">Notifications</NavButton></SideBarListItem>
+        <SideBarListItem><NavButton menu="true" to="/snippets/react">React</NavButton></SideBarListItem>
+        <SideBarListItem><NavButton menu="true" to="/snippets/react-router">Routing</NavButton></SideBarListItem>
+        <SideBarListItem><NavButton menu="true" to="/snippets/styled-components">Styled Components</NavButton></SideBarListItem>
+        <SideBarListItem><NavButton menu="true" to="/snippets/testing">Testing</NavButton></SideBarListItem>
+        <SideBarListItem><NavButton menu="true" to="/snippets/api-requests">API Requests</NavButton></SideBarListItem>
+        <SideBarListItem><NavButton menu="true" to="/snippets/webpack">Webpack</NavButton></SideBarListItem>
+        <SideBarListItem><NavButton menu="true" to="/snippets/animations">Animations</NavButton></SideBarListItem>
+        <SideBarListItem><NavButton menu="true" to="/snippets/grid-layout">Grid Layout</NavButton></SideBarListItem>
+        <SideBarListItem><NavButton menu="true" to="/snippets/icons">Icons</NavButton></SideBarListItem>
+        <SideBarListItem><NavButton menu="true" to="/snippets/react-loaders">Loaders</NavButton></SideBarListItem>
+        <SideBarListItem><NavButton menu="true" to="/snippets/react-notifications">Notifications</NavButton></SideBarListItem>
       </SideBarList>
       </SideBarStyle>
     </PlaygroundPageAnimation>

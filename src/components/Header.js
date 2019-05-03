@@ -12,7 +12,8 @@ const Header = () => {
   return (
     <HeaderStyle>
       <NavButton to="/" exact>Home</NavButton>
-      <NavButton to="/playground/react" exact>Playground</NavButton>
+      <NavButton to="/playground" exact>Playground</NavButton>
+      <NavButton to="/snippets/react" exact>Snippets</NavButton>
     </HeaderStyle>
   );
 }

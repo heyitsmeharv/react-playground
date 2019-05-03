@@ -2,10 +2,11 @@ import styled, { css } from 'styled-components'
 import colour from '../resources/styles/colours'
 
 const Page = styled.div`
-  width: 100vw;
   height: 100vh;
+  width: 100%
   left: 0;
   text-align: center;
+  overflow-y: auto;
 `;
 
 export const PageHeader = styled.div`

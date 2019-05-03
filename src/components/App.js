@@ -8,6 +8,7 @@ import Header from './Header';
 import Wrapper, { FlexWrapper } from './Wrapper';
 import SideBar from './SideBar';
 import HomePage from '../pages/HomePage';
+import Playground from '../pages/Playground';
 import AboutReact from '../pages/routes/AboutReact';
 import AboutRouting from '../pages/routes/AboutRouting';
 import AboutSpinners from '../pages/routes/AboutSpinners';
@@ -20,8 +21,8 @@ class App extends Component {
       <Router>
         <Wrapper>
           <Header />
-          <FlexWrapper>
-          <Route path="/playground" component={SideBar}/>
+          <Wrapper>
+          <Route path="/snippets" component={SideBar}/>
           <Route
             render={({ location }) => {
               return (
@@ -30,27 +31,29 @@ class App extends Component {
                     timeout={300}
                     classNames="page"
                     key={location.key}
+                    unmountOnExit
                   >
                     <Switch location={location}>
                       <Route exact path="/" component={HomePage} />
-                      <Route exact path="/playground/react" component={AboutReact} />
-                      {/* <Route exact path="/playground/react-router" component={AboutRouting} />
-                      <Route exact path="/playground/styled-components" component={AboutReact} />
-                      <Route exact path="/playground/testing" component={AboutReact} />
-                      <Route exact path="/playground/api-requests" component={AboutReact} />
-                      <Route exact path="/playground/webpack" component={AboutReact} />
-                      <Route exact path="/playground/animation" component={AboutReact} />
-                      <Route exact path="/playground/grid-layout" component={AboutReact} />
-                      <Route exact path="/playground/icons" component={AboutReact} /> */}
-                      <Route exact path="/playground/react-loaders" component={AboutSpinners} />
-                      <Route exact path="/playground/react-notifications" component={AboutNotifications} />
+                      <Route exact path="/playground" component={Playground} />
+                      <Route exact path="/snippets/react" component={AboutReact} />
+                      {/* <Route exact path="/snippets/react-router" component={AboutRouting} />
+                      <Route exact path="/snippets/styled-components" component={AboutReact} />
+                      <Route exact path="/snippets/testing" component={AboutReact} />
+                      <Route exact path="/snippets/api-requests" component={AboutReact} />
+                      <Route exact path="/snippets/webpack" component={AboutReact} />
+                      <Route exact path="/snippets/animation" component={AboutReact} />
+                      <Route exact path="/snippets/grid-layout" component={AboutReact} />
+                      <Route exact path="/snippets/icons" component={AboutReact} /> */}
+                      <Route exact path="/snippets/react-loaders" component={AboutSpinners} />
+                      <Route exact path="/snippets/react-notifications" component={AboutNotifications} />
                     </Switch>
                   </CSSTransition>
                 </TransitionGroup>
               );
             }}
           />
-          </FlexWrapper>
+          </Wrapper>
         </Wrapper>
       </Router>
     );
