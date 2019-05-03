@@ -31,7 +31,6 @@ class App extends Component {
                     timeout={300}
                     classNames="page"
                     key={location.key}
-                    unmountOnExit
                   >
                     <Switch location={location}>
                       <Route exact path="/" component={HomePage} />

@@ -4,6 +4,12 @@ import colour from '../../resources/styles/colours';
 import Page, { PageHeader } from '../../components/Page';
 import PlaygroundPageAnimation from '../../animations/PlaygroundPageAnimation';
 import SnippetBox from '../../components/SnippetBox';
+import {
+  LiveProvider,
+  LiveEditor,
+  LiveError,
+  LivePreview
+} from 'react-live'
 
 const Paragraph = styled.div`
   padding: 12px;
@@ -24,7 +30,7 @@ const AboutReact = () => {
       <Page>
         <PageHeader>React</PageHeader>
         <PageContainer>
-          <SnippetBox>
+          {/* <SnippetBox>
             <h2>Rendering The Component Into The DOM</h2>
             <Paragraph>
               <p>import React from 'react'</p>
@@ -68,7 +74,12 @@ const AboutReact = () => {
               <p>{`<h1>It is {this.state.date}</h1>`}</p>
               <p>)}</p>
             </Paragraph>
-          </SnippetBox>
+          </SnippetBox> */}
+          <LiveProvider code="<strong>Hello World!</strong>">
+            <LiveEditor />
+            <LiveError />
+            <LivePreview />
+          </LiveProvider>
         </PageContainer>
       </Page>
     </PlaygroundPageAnimation>
