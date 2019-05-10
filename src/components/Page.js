@@ -13,4 +13,28 @@ const Page = styled.div`
   `}
 `;
 
+export const PageTitle = styled.h2`
+
+  ${props => props.home && css`
+      font-size: 6rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 10rem
+      margin-top: 10rem;
+    }
+  `}
+`
+
+export const PageSubTitle = styled.h3`
+
+  ${props => props.home && css`
+      font-size: 3rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  `}
+`
+
 export default Page;

@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import Page from '../components/Page';
+import Page, { PageTitle, PageSubTitle } from '../components/Page';
 import SlideInTop from '../animations/SlideInTop';
 import SlideOutTop from '../animations/SlideOutTop';
 
@@ -16,7 +16,8 @@ const HomePageAnimation = styled(Page)`
 const Home = () => {
   return (
     <HomePageAnimation home="true">
-      <div>Hello</div>
+      <PageTitle home="true">React Playground</PageTitle>
+      <PageSubTitle home="true">My reference guide to all things React and technologies alongside</PageSubTitle>
     </HomePageAnimation>
   );
 }
