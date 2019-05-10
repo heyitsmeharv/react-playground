@@ -1,11 +1,15 @@
 import React from 'react';
 import styled from 'styled-components';
 import Page from '../components/Page';
-import SlideInTop from '../animations/SlideInTop';
+import SlideInLeft from '../animations/SlideInLeft';
+import SlideOutTop from '../animations/SlideOutTop';
 
 const PlaygroundPageAnimation = styled(Page)`
 &.page-enter {
-  animation: ${SlideInTop} 0.5s forwards;
+  animation: ${SlideInLeft} 0.2s forwards;
+}
+&.page-exit {
+  animation: ${SlideOutTop} 0.5s forwards;
 }
 `;
 
