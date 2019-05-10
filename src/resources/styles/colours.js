@@ -20,6 +20,7 @@ const colours = {
   purple: '#3a0088',
   amber: '#ff9f43',
   green: '#11cb5f',
+  react: '#61dafb'
 }
 
 export default colours

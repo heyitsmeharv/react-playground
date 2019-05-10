@@ -1,23 +1,18 @@
 import styled from 'styled-components';
+import SlideInTop from '../animations/SlideInTop';
 import colour from '../resources/styles/colours'
 
-const Wrapper = styled.div`
+export const Wrapper = styled.div`
   position: relative;
-  background: ${colour.white};
-  /* width: 100%; */
-  min-height: 100vh;
-  height: 100vh;
-  height: 100%;
   overflow-x: hidden;
-  overflow-y: hidden;
+  overflow-y: auto;
   margin: 0 auto;
   padding: 0 0px;
-  font-family: "Acme", sans-serif;
+  font-family: "Staatliches", cursive;
 `
 
-export const FlexWrapper = styled.div`
-  display: flex;
-  flex-direction: row;
+export const AppWrap = styled(Wrapper)`
+  animation: ${SlideInTop} 0.5s forwards;
 `
 
-export default Wrapper;
+// export default Wrapper;
