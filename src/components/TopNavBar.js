@@ -12,8 +12,8 @@ const TopNavBar = () => {
   return (
     <TopNavBarStyle>
       <NavButton to="/" exact>Home</NavButton>
-      <NavButton to="/playground" exact>Playground</NavButton>
       <NavButton to="/snippets" exact>Snippets</NavButton>
+      <NavButton to="/playground" exact>Playground</NavButton>
     </TopNavBarStyle>
   );
 }
