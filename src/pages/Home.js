@@ -30,12 +30,31 @@ const BackgroundTwo = styled.div`
 `
 
 const TextBlockContainer = styled.div`
-  width: 100rem;
-  height: 100rem;
+  width: 60rem;
+  height: 30rem;
+  margin-left: 2rem;
+  border: solid 1px transparent;
+
+  ol {
+    font-size: 5rem;
+    color: ${colour.react};
+    margin-left: 5rem;
+    margin-top: 2rem;
+    float: left;
+    list-style: disc;
+
+    li {
+      // float: left;
+      font-size: 4rem;
+    }
+  }
 `
 
-const Text = styled.p`
-  color: ${colour.white}
+const TextBlockTitle = styled.h1`
+  color: ${colour.white};
+  margin-right: 30rem;
+  margin-top: 2rem;
+  font-size: 5rem;
 `
 
 const Home = () => {
@@ -47,7 +66,15 @@ const Home = () => {
       </BackgroundOne>
       <BackgroundTwo>
       <TextBlockContainer>
-        <Text>Text</Text>
+        <TextBlockTitle>Tech Covered:</TextBlockTitle>
+        <ol>
+          <li>React Life-Cycle</li>
+          <li>Props and State</li>
+          <li>Styled Components</li>
+          <li>React Router</li>
+          <li>Animation</li>
+          <li>Webpack</li>
+        </ol>
       </TextBlockContainer>
       </BackgroundTwo>
     </HomePageAnimation>
