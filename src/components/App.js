@@ -32,7 +32,7 @@ class App extends Component {
                       <Switch location={location}>
                         <Route exact path="/" component={HomePage} />
                         <Route exact path="/playground" component={Playground} />
-                         {/*<Route exact path="/snippets/react" component={AboutReact} />
+                        {/*<Route exact path="/snippets/react" component={AboutReact} />
                         <Route exact path="/snippets/react-loaders" component={AboutSpinners} />
                         <Route exact path="/snippets/react-notifications" component={AboutNotifications} /> */}
                       </Switch>
