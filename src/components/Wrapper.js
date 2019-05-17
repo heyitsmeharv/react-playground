@@ -5,7 +5,7 @@ import colour from '../resources/styles/colours'
 export const Wrapper = styled.div`
   position: relative;
   overflow-x: hidden;
-  overflow-y: auto;
+  overflow-y: hidden;
   margin: 0 auto;
   padding: 0 0px;
   font-family: "Staatliches", cursive;

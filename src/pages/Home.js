@@ -1,7 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import colour from '../resources/styles/colours.js';
-import image from '../resources/images/react-background.jpg';
+import image from '../resources/images/react-background-space.jpg';
+import image2 from '../resources/images/react-background-fade.jpg';
 import Page, { PageTitle, PageSubTitle } from '../components/Page';
 import SlideInTop from '../animations/SlideInTop';
 import SlideOutTop from '../animations/SlideOutTop';
@@ -16,19 +17,25 @@ const HomePageAnimation = styled(Page)`
 `;
 
 const BackgroundOne = styled.div`
-  background-image: url(${image});
+  // background-image: url(${image});
+  background: black url(${image}) no-repeat 0px 45px;
   background-size: cover;
   background-attachment: fixed;
   height: 100vh;
 `
 const BackgroundTwo = styled.div`
-  background: ${colour.react}
+  background-image: url(${image2});
+  background-size: cover;
   height: 100vh;
 `
 
-const Block = styled.div`
-  width: 100%;
-  height: 100px;
+const TextBlockContainer = styled.div`
+  width: 100rem;
+  height: 100rem;
+`
+
+const Text = styled.p`
+  color: ${colour.white}
 `
 
 const Home = () => {
@@ -39,19 +46,10 @@ const Home = () => {
         <PageSubTitle home="true">My reference guide to all things React and technologies alongside</PageSubTitle>
       </BackgroundOne>
       <BackgroundTwo>
-        <Block/>
-        <PageTitle home="true">React Playground</PageTitle>
-        <PageSubTitle home="true">My reference guide to all things React and technologies alongside</PageSubTitle>
-        <Block/>
-        <Block/>
+      <TextBlockContainer>
+        <Text>Text</Text>
+      </TextBlockContainer>
       </BackgroundTwo>
-        <Block/>
-        <Block/>
-        <Block/>
-        <Block/>
-        <Block/>
-        <Block/>
-        <Block/><Block/><Block/><Block/><Block/><Block/><Block/><Block/><Block/><Block/><Block/><Block/>
     </HomePageAnimation>
   );
 }
