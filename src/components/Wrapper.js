@@ -13,6 +13,7 @@ export const Wrapper = styled.div`
 
 export const AppWrap = styled(Wrapper)`
   animation: ${SlideInTop} 0.5s forwards;
+  display: flex;
 `
 
 // export default Wrapper;

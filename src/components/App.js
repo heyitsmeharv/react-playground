@@ -4,10 +4,10 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
 import Icon from '@mdi/react'
-import { mdiArrowLeft } from '@mdi/js'
+import { mdiMenu, mdiClose } from '@mdi/js'
 import { AppWrap } from './Wrapper';
 import TopNavBar from './TopNavBar';
-import { CollapseButton } from './Button';
+import { NavBarButton } from './Button';
 import HomePage from '../pages/Home';
 import Playground from '../pages/Playground';
 // import AboutReact from '../pages/routes/AboutReact';
@@ -24,7 +24,7 @@ class App extends React.Component {
     };
   }
 
-  handleOnNavBar = () => {
+  handleOnNavBarVisibility = () => {
     const { navBarOpen } = this.state;
     this.setState({ navBarOpen: !navBarOpen });
   }
@@ -35,15 +35,18 @@ class App extends React.Component {
     return (
       <Router>
         <AppWrap>
-          <CollapseButton>
-            <Icon path={mdiArrowLeft}
+          <NavBarButton onClick={this.handleOnNavBarVisibility} animate={true}>
+            {navBarOpen ? <Icon 
+              path={mdiMenu}
               size={1}
               color="black"
-            />
-          </CollapseButton>
-          {navBarOpen &&
-            <TopNavBar open={navBarOpen}/>
-          }
+            /> : <Icon 
+              path={mdiClose}
+              size={1}
+              color="black"
+            />} 
+          </NavBarButton>
+          {navBarOpen && <TopNavBar animationSlide={navBarOpen ? 'true' : 'false'}/>}
             <Route
               render={({ location }) => {
                 return (
