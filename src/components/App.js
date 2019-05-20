@@ -3,9 +3,11 @@ import '../resources/styles/reset.css';
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
-
+import Icon from '@mdi/react'
+import { mdiArrowLeft } from '@mdi/js'
 import { AppWrap } from './Wrapper';
 import TopNavBar from './TopNavBar';
+import { CollapseButton } from './Button';
 import HomePage from '../pages/Home';
 import Playground from '../pages/Playground';
 // import AboutReact from '../pages/routes/AboutReact';
@@ -14,12 +16,34 @@ import Playground from '../pages/Playground';
 // import AboutNotifications from '../pages/routes/AboutNotifications';
 
 
-class App extends Component {
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      navBarOpen: true
+    };
+  }
+
+  handleOnNavBar = () => {
+    const { navBarOpen } = this.state;
+    this.setState({ navBarOpen: !navBarOpen });
+  }
+
+
   render() {
+    const { navBarOpen } = this.state;
     return (
       <Router>
         <AppWrap>
-          <TopNavBar/>
+          <CollapseButton>
+            <Icon path={mdiArrowLeft}
+              size={1}
+              color="black"
+            />
+          </CollapseButton>
+          {navBarOpen &&
+            <TopNavBar open={navBarOpen}/>
+          }
             <Route
               render={({ location }) => {
                 return (

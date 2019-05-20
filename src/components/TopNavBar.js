@@ -4,8 +4,9 @@ import { NavButton } from './Button';
 import colour from '../resources/styles/colours';
 
 const TopNavBarStyle = styled.section`
-  padding: 2%;
-  background: ${colour.pink};
+  // background: ${colour.pink};
+  background-color: #1abc9c;
+  display: flex;
 `;
 
 const TopNavBar = () => {

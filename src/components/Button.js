@@ -3,7 +3,7 @@ import colour from '../resources/styles/colours';
 import { NavLink } from 'react-router-dom';
 
 export const NavButton = styled(NavLink)`
-  background: ${colour.darkPink};
+  background: #01676b;
   color: white;
   border-radius: 3px;
   /* border: 2px solid ${colour.secondary}; */
@@ -13,8 +13,8 @@ export const NavButton = styled(NavLink)`
   align-items: center;
 
   :hover {
-    background: ${colour.white};
-    color: ${colour.darkPink}
+    background: black;
+    color: #21aa93;
   }
 
   ${props => props.menu && css`
@@ -55,6 +55,20 @@ export const NotificationButton = styled.button`
   align-items: center;
   width: 200px;
   height: 200px;
+
+  :hover {
+    background: ${colour.white};
+    color: ${colour.darkPink}
+  }
+`;
+
+export const CollapseButton = styled.button`
+  background: ${colour.darkPink};
+  color: white;
+  border-radius: 50%;
+  border: 2px solid ${colour.secondary};
+  text-decoration: none!important;
+  align-items: center;
 
   :hover {
     background: ${colour.white};

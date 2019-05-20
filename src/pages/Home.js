@@ -18,7 +18,7 @@ const HomePageAnimation = styled(Page)`
 
 const BackgroundOne = styled.div`
   // background-image: url(${image});
-  background: black url(${image}) no-repeat 0px 45px;
+  background: black url(${image}) no-repeat 0px 0px;
   background-size: cover;
   background-attachment: fixed;
   height: 100vh;
