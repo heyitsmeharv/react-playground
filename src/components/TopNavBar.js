@@ -8,45 +8,64 @@ import colour from '../resources/styles/colours';
 const TopNavBarStyle = styled.section`
   background-color: ${colour.react};
   display: flex;
-  flex-direction: column;
-  height: -webkit-fill-available;
-
-  ${props => props.animationSlide && css`
-    transform: translateX(0);
-  `}
-
-  ${props => props.animationSlide && css`
-    transform: translateX(-100%);
-  `}
-
 }
-`;
+`
+
+const NewTopNavBarStyle = styled.section`
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+}
+`
+const IconTextWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+`
+
+const Text = styled.div`
+  display: flex;
+  justify-content: center;
+  :hover {
+    text-shadow: 1px 1px ${colour.react};
+  }
+`
 
 const TopNavBar = () => {
   return (
-    <TopNavBarStyle>
+    <NewTopNavBarStyle>
       <NavButtonNew to="/" exact>
-        <Icon 
-          path={mdiHome}
-          size={1}
-          color="black"
-        />
+        <IconTextWrapper>
+          <Icon 
+            path={mdiHome}
+            size={1}
+            color={colour.react}
+          />
+          <Text>Home</Text>
+        </IconTextWrapper>
       </NavButtonNew>
       <NavButtonNew to="/snippets" exact>
-        <Icon 
-          path={mdiContentCut}
-          size={1}
-          color="black"
-        />
+        <IconTextWrapper>
+          <Icon 
+            path={mdiContentCut}
+            size={1}
+            color={colour.react}
+          />
+          <Text>Snippets</Text>
+        </IconTextWrapper>
       </NavButtonNew>
       <NavButtonNew to="/playground" exact>
-        <Icon 
-          path={mdiCubeOutline}
-          size={1}
-          color="black"
-        />
+        <IconTextWrapper>
+          <Icon 
+            path={mdiCubeOutline}
+            size={1}
+            color={colour.react}
+          />
+          <Text>Playground</Text>
+        </IconTextWrapper>
       </NavButtonNew>
-    </TopNavBarStyle>
+    </NewTopNavBarStyle>
   );
 }
 

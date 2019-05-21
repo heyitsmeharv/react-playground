@@ -46,13 +46,12 @@ export const NavButton = styled(NavLink)`
 `
 
 export const NavButtonNew = styled(NavLink)`
-  margin: 0.5em 1em;
-  padding: 0.25em 1em;
-  align-items: center;
-  border-radius: 25%;
-  :hover {
-    background: white;
-  }
+  margin: 0.8em 1em;
+  text-decoration: none!important;
+  color: white;
+    :hover {
+      color: white;
+    }
 `
 
 export const NavBarButton = styled.a`

@@ -35,7 +35,7 @@ class App extends React.Component {
     return (
       <Router>
         <AppWrap>
-          <NavBarButton onClick={this.handleOnNavBarVisibility} animate={true}>
+          {/* <NavBarButton onClick={this.handleOnNavBarVisibility} animate={true}>
             {navBarOpen ? <Icon 
               path={mdiMenu}
               size={1}
@@ -46,7 +46,8 @@ class App extends React.Component {
               color="black"
             />} 
           </NavBarButton>
-          {navBarOpen && <TopNavBar animationSlide={navBarOpen ? 'true' : 'false'}/>}
+          {navBarOpen && <TopNavBar animationSlide={navBarOpen ? 'true' : 'false'}/>} */}
+            <TopNavBar/>
             <Route
               render={({ location }) => {
                 return (
