@@ -5,8 +5,8 @@
   "dependencies": {
     "@mdi/js": "^3.6.95",
     "@mdi/react": "^1.1.1",
-    "react": "^16.7.0",
-    "react-dom": "^16.7.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
     "react-icons": "^3.3.0",
     "react-live": "^2.0.1",
     "react-notifications-component": "^1.0.1",

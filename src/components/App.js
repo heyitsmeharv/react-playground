@@ -8,6 +8,7 @@ import { mdiMenu, mdiClose } from '@mdi/js'
 import { AppWrap } from './Wrapper';
 import TopNavBar from './TopNavBar';
 import { NavBarButton } from './Button';
+import Toggle from './Toggle';
 import HomePage from '../pages/Home';
 import Playground from '../pages/Playground';
 // import AboutReact from '../pages/routes/AboutReact';
