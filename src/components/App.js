@@ -6,7 +6,8 @@ import { TransitionGroup, CSSTransition } from 'react-transition-group';
 import Icon from '@mdi/react'
 import { mdiMenu, mdiClose } from '@mdi/js'
 import { AppWrap } from './Wrapper';
-import TopNavBar from './TopNavBar';
+// import TopNavBar from './TopNavBar';
+import Navigation from '../pages/Navigation';
 import { NavBarButton } from './Button';
 import Toggle from './Toggle';
 import HomePage from '../pages/Home';
@@ -48,7 +49,7 @@ class App extends React.Component {
             />} 
           </NavBarButton>
           {navBarOpen && <TopNavBar animationSlide={navBarOpen ? 'true' : 'false'}/>} */}
-            <TopNavBar/>
+            <Route path="/" component={Navigation}/>
             <Route
               render={({ location }) => {
                 return (
@@ -59,7 +60,7 @@ class App extends React.Component {
                       key={location.key}
                     >
                       <Switch location={location}>
-                        <Route exact path="/" component={HomePage} />
+                        <Route path="/" component={HomePage} />
                         <Route exact path="/playground" component={Playground} />
                         {/*<Route exact path="/snippets/react" component={AboutReact} />
                         <Route exact path="/snippets/react-loaders" component={AboutSpinners} />

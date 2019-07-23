@@ -61,7 +61,7 @@ const Home = () => {
   return (
     <HomePageAnimation home="true">
       <BackgroundOne>
-        <PageTitle home="true">React Playground</PageTitle>
+        <PageTitle home="true">My Playground</PageTitle>
         <PageSubTitle home="true">My reference guide to all things React and technologies alongside</PageSubTitle>
       </BackgroundOne>
       <BackgroundTwo>

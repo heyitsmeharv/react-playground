@@ -20,7 +20,11 @@ const colours = {
   purple: '#3a0088',
   amber: '#ff9f43',
   green: '#11cb5f',
-  react: '#61dafb'
+  react: '#61dafb',
+  primaryLighter: '#e3fdfd',
+  primaryLight: '#cbf1f5',
+  primaryDark: '#a6e3e9',
+  primaryDarker: '#71c9ce',
 }
 
 export default colours
