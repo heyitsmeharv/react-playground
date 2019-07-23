@@ -11,6 +11,8 @@ import Navigation from '../pages/Navigation';
 import { NavBarButton } from './Button';
 import Toggle from './Toggle';
 import HomePage from '../pages/Home';
+import HowTo from '../pages/HowTo';
+import Examples from '../pages/Examples.js';
 import Playground from '../pages/Playground';
 // import AboutReact from '../pages/routes/AboutReact';
 // import AboutRouting from '../pages/routes/AboutRouting';
@@ -49,6 +51,8 @@ class App extends React.Component {
                     >
                       <Switch location={location}>
                         <Route exact path="/" component={HomePage} />
+                        <Route exact path="/howto" component={HowTo} />
+                        <Route exact path="/examples" component={Examples} />
                         <Route exact path="/playground" component={Playground} />
                         {/*<Route exact path="/snippets/react" component={AboutReact} />
                         <Route exact path="/snippets/react-loaders" component={AboutSpinners} />

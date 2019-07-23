@@ -13,7 +13,6 @@ const PlaygroundPageAnimation = styled(Page)`
 }
 `;
 
-// TODO: FIX THE OVERFLOW
 const Container = styled.div`
   iframe {
     width: 100%;
@@ -23,7 +22,7 @@ const Container = styled.div`
 
 const Playground = () => {
   return (
-    <PlaygroundPageAnimation>
+    <PlaygroundPageAnimation playground>
       <Container>
         <iframe 
           src="https://codesandbox.io/embed/new?codemirror=1&highlights=11,12,13,14" 

@@ -8,39 +8,38 @@ const Page = styled.div`
   text-align: center;
   overflow-y: auto;
 
+  ${props => props.playground && css`
+    overflow-y: hidden;
+  `}
+
   ${props => props.snippets && css`
     background: ${colour.white};
   `}
 `;
 
 export const PageTitle = styled.h2`
-
-  ${props => props.home && css`
-      font-size: 6rem;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 8rem
-      padding-top: 1rem;
-      color: ${colour.white};
-      // text-decoration: underline;
-      // text-shadow: 4px 2px ${colour.react};
-
-    }
+  font-size: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 8rem
+  padding-top: 1rem;
+  color: ${colour.white};
+  ${props => props.black && css`
+    color: ${colour.black}
   `}
+
 `
 
 export const PageSubTitle = styled.h3`
-
-  ${props => props.home && css`
-      font-size: 3rem;
-      margin: 0px 5rem;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color: ${colour.white};
-      // text-shadow: 4px 2px ${colour.react};
-    }
+  font-size: 3rem;
+  margin: 0px 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: ${colour.white};
+  ${props => props.black && css`
+    color: ${colour.black}
   `}
 `
 
