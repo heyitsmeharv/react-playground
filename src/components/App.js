@@ -37,18 +37,6 @@ class App extends React.Component {
     return (
       <Router>
         <AppWrap>
-          {/* <NavBarButton onClick={this.handleOnNavBarVisibility} animate={true}>
-            {navBarOpen ? <Icon 
-              path={mdiMenu}
-              size={1}
-              color="black"
-            /> : <Icon 
-              path={mdiClose}
-              size={1}
-              color="black"
-            />} 
-          </NavBarButton>
-          {navBarOpen && <TopNavBar animationSlide={navBarOpen ? 'true' : 'false'}/>} */}
             <Route path="/" component={Navigation}/>
             <Route
               render={({ location }) => {
@@ -60,7 +48,7 @@ class App extends React.Component {
                       key={location.key}
                     >
                       <Switch location={location}>
-                        <Route path="/" component={HomePage} />
+                        <Route exact path="/" component={HomePage} />
                         <Route exact path="/playground" component={Playground} />
                         {/*<Route exact path="/snippets/react" component={AboutReact} />
                         <Route exact path="/snippets/react-loaders" component={AboutSpinners} />

@@ -65,7 +65,7 @@ const Home = () => {
         <PageSubTitle home="true">My reference guide to all things React and technologies alongside</PageSubTitle>
       </BackgroundOne>
       <BackgroundTwo>
-      <TextBlockContainer>
+      {/* <TextBlockContainer>
         <TextBlockTitle>Tech Covered:</TextBlockTitle>
         <ol>
           <li>React Life-Cycle</li>
@@ -75,7 +75,8 @@ const Home = () => {
           <li>Animation</li>
           <li>Webpack</li>
         </ol>
-      </TextBlockContainer>
+      </TextBlockContainer> */}
+      <text>I built this for a reference guide</text>
       </BackgroundTwo>
     </HomePageAnimation>
   );

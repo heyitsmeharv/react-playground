@@ -1,9 +1,7 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
 import colour from '../resources/styles/colours';
-// import { moveInBottom } from '../animations/Animations';
-import { NavigationButton, NavigationLink } from '../components/Button';
-import { FiAlignJustify } from "react-icons/fi";
+import { NavigationLink } from '../components/Button';
 
 
 const NavContainer = styled.div`
@@ -117,13 +115,13 @@ const NavLabel = styled.label`
 
 const NavIcon = styled.span`
   position: relative;
-  margin-top: 3.2rem;
+  margin-top: 2.5rem;
   &,
   ::before,
   ::after {
-    width: 3rem;
+    width: 2rem;
     height: 2px;
-    background-color: ${colour.darkGray};
+    background-color: ${colour.black};
     display: inline-block;
   }
 
@@ -159,38 +157,24 @@ const NavSpan = styled.span`
 `
 
 
-class Navigation extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      toggleActive: false,
-    }
-  }
-
-  handleToggleNav = () => {
-    this.setState({ toggleActive: false })
-  }
-
-  render() {
-    const { toggleActive } = this.state;
-    return (
-      <NavContainer>
-        <NavCheckBox type="checkbox" id="navi-toggle" />
-        <NavLabel htmlFor="navi-toggle" animate="true">
-          <NavIcon className="icon"/>
-        </NavLabel>
-        <NavBackground/>
-        <Nav>
-          <NavList>
-            <NavItem><NavigationLink exact to="/home"><NavSpan>01</NavSpan>Home</NavigationLink></NavItem>
-            <NavItem><NavigationLink exact to="/hire"><NavSpan>02</NavSpan>How To</NavigationLink></NavItem>
-            <NavItem><NavigationLink exact to="/faq"><NavSpan>03</NavSpan>Examples</NavigationLink></NavItem>
-            <NavItem><NavigationLink exact to="/contact"><NavSpan>04</NavSpan>Something Else</NavigationLink></NavItem>
-          </NavList>
-        </Nav>
-      </NavContainer>
-    )
-  }
+const Navigation = () => {
+  return (
+    <NavContainer>
+      <NavCheckBox type="checkbox" id="navi-toggle" />
+      <NavLabel htmlFor="navi-toggle" animate="true">
+        <NavIcon className="icon"/>
+      </NavLabel>
+      <NavBackground/>
+      <Nav>
+        <NavList>
+          <NavItem><NavigationLink exact to="/"><NavSpan>01</NavSpan>Home</NavigationLink></NavItem>
+          <NavItem><NavigationLink exact to="/howto"><NavSpan>02</NavSpan>How To</NavigationLink></NavItem>
+          <NavItem><NavigationLink exact to="/examples"><NavSpan>03</NavSpan>Examples</NavigationLink></NavItem>
+          <NavItem><NavigationLink exact to="/playground"><NavSpan>04</NavSpan>Playground</NavigationLink></NavItem>
+        </NavList>
+      </Nav>
+    </NavContainer>
+  )
 }
 
 export default Navigation;
